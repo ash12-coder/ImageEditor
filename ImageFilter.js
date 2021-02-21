@@ -34,14 +34,6 @@ document.addEventListener('click', (e) =>{
             Caman("#canvas", img, function(){
                 this.saturation(-5).render();
             });
-        }else if(e.target.classList.contains('vibrance-remove')){
-            Caman("#canvas", img, function(){
-                this.vibrance(5).render();
-            });
-        }else if(e.target.classList.contains('vibrance-remove')){
-            Caman("#canvas", img, function(){
-                this.vibrance(-5).render();
-            });
         }else if(e.target.classList.contains('vintage-add')){
             Caman("#canvas", img, function(){
                 this.vintage().render();
@@ -73,6 +65,14 @@ document.addEventListener('click', (e) =>{
         }else if(e.target.classList.contains('hermajesty-add')){
             Caman("#canvas", img, function(){
                 this.hermajesty().render();
+            });
+        }else if(e.target.classList.contains('sepia-add')){
+            Caman("#canvas", img, function(){
+                this.sepia(10).render();
+            });
+        }else if(e.target.classList.contains('sepia-remove')){
+            Caman("#canvas", img, function(){
+                this.sepia(-10).render();
             });
         }
     }
